@@ -21,6 +21,7 @@ public class TopicController {
     public ResponseEntity<List<TopicEntity>> listAllTopics() {
         List<TopicEntity> topics = topicService.findAllTopics();
         return ResponseEntity.ok(topics);
+
     }
 
     @PostMapping()
@@ -29,4 +30,5 @@ public class TopicController {
 
         return  ResponseEntity.ok(topicSaved);
     }
+
 }
