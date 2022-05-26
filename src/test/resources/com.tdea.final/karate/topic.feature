@@ -7,6 +7,6 @@ Feature: topic
 
   Scenario: PostTopic
     Given url 'http://localhost:8080/topic'
-    And request { id: 1, name: "OTA"}
+    And request { id: 1, name: "ALFONSO"}
     When method post
     Then status 200
